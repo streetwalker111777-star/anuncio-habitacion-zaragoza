@@ -94,7 +94,7 @@ Para que Antigravity suba archivos automáticamente:
    {
      "repository": "streetwalker111777-star/web-generator-toolkit",
      "branch": "main",
-     "token": "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"
+     "token": "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"
    }
    ```
 

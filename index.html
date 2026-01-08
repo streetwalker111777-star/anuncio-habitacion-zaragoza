@@ -1,21 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Integrado en Antigravity</title>
+    <title>Mi Galería Personal</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <h1>Bienvenido a Antigravity Web</h1>
-        </header>
-        <main>
-            <p>Este es un ejemplo de cómo integrar tu proyecto web.</p>
-            <button id="actionBtn">Haz clic aquí</button>
-        </main>
-    </div>
+    <header>
+        <div class="header-content">
+            <h1>Mi Colección Multimedia</h1>
+            <p>Bienvenido a mi espacio personal</p>
+        </div>
+    </header>
+
+    <main class="gallery-container">
+        <!-- Sección de Videos -->
+        <section class="media-section">
+            <h2>Videos</h2>
+            <div class="video-grid">
+                <div class="video-card">
+                    <video controls poster="images/poster-placeholder.jpg">
+                        <source src="videos/VID-20250612-WA0009.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                    <div class="caption">Video 1</div>
+                </div>
+                <div class="video-card">
+                    <video controls>
+                        <source src="videos/VID-20250916-WA0066.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                    <div class="caption">Video 2</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Fotos -->
+        <section class="media-section">
+            <h2>Fotografías</h2>
+            <div class="photo-grid">
+                <div class="photo-card">
+                    <img src="images/IMG-20251022-WA0050.jpg" alt="Foto 1" loading="lazy">
+                </div>
+                <div class="photo-card">
+                    <img src="images/IMG-20251022-WA0051.jpg" alt="Foto 2" loading="lazy">
+                </div>
+                <div class="photo-card">
+                    <img src="images/IMG-20260108-WA0006.jpg" alt="Foto 3" loading="lazy">
+                </div>
+                <div class="photo-card">
+                    <img src="images/IMG-20260108-WA0007.jpg" alt="Foto 4" loading="lazy">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mi Galería Web</p>
+    </footer>
+
     <script src="js/main.js"></script>
 </body>
+
 </html>

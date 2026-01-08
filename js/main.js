@@ -1,7 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const btn = document.getElementById('actionBtn');
-    btn.addEventListener('click', () => {
-        alert('¡Integración exitosa con Antigravity!');
+    console.log('Galería cargada exitosamente');
+
+    // Efecto simple al hacer click en imagenes
+    const images = document.querySelectorAll('.photo-card img');
+
+    images.forEach(img => {
+        img.addEventListener('click', () => {
+            if (img.requestFullscreen) {
+                img.requestFullscreen();
+            } else if (img.webkitRequestFullscreen) { /* Safari */
+                img.webkitRequestFullscreen();
+            } else if (img.msRequestFullscreen) { /* IE11 */
+                img.msRequestFullscreen();
+            }
+        });
     });
-    console.log('Antigravity JS cargado correctamente.');
 });
